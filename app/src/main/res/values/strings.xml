@@ -1,1 +1,12 @@
-
+<resources>
+    <!--
+    Para adicionar suporte a outros idiomas, crie novas pastas:
+    - values-pt-rBR para Português (Brasil)
+    - values-pt-rPT para Português (Portugal)
+    E copie este arquivo para dentro delas, traduzindo os valores.
+    -->
+    <string name="app_name">FlexTV Player</string>
+    <string name="settings_title">Settings</string>
+    <string name="favorites_title">Favorites</string>
+    <string name="error_loading_playlist">Error loading playlist. Please check the URL and your connection.</string>
+</resources>
