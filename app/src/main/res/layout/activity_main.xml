@@ -1,21 +1,14 @@
-package com.flextv.player.ui.main
-
-import android.os.Bundle
-import androidx.fragment.app.FragmentActivity
-import com.flextv.player.R
-
-/**
- * Activity principal que hospeda o fragmento de navegação da Leanback.
- */
-class MainActivity : FragmentActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.main_browse_fragment, MainFragment())
-                .commitNow()
-        }
-    }
-}
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este é um layout de container simples para hospedar o nosso fragmento principal.
+A interface real (com os canais e categorias) será gerada por código
+pelo MainFragment da biblioteca Leanback.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_browse_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity"
+    tools:deviceIds="tv"
+    tools:ignore="MergeRootFrame" />
